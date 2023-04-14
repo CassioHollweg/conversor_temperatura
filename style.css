@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: cadetblue;
+  margin: 300px auto;
+  height: 25vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 76px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #resultado {
+    text-align: center;
+  }
+
+  #temp {
+    padding: 5px;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 53px;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 10px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+#temp {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#temp:focus {
+  outline: none;
+}
+
+#temperaturas-entrada,
+#temperaturas-saida {
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#temperaturas-entrada:focus,
+#temperaturas-saida:focus {
+  outline: none;
+}
+
+#resultado {
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  background-color: burlywood;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  padding: 9px;
+  transition: 0.2s;
+  font-weight: bold;
+}
